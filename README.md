@@ -42,7 +42,7 @@ Example:
 <BR>
 <h2>makenewcommand</h2>
 
-`mnc`
+run `mnc`
 <br>
 <HR>
 <H3>Exit</H3>
