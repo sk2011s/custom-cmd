@@ -10,6 +10,7 @@ and run `python main.py` in terminall to run app
 <!--از تگ hr  برای خط استفاده کن-->
 <hr>
 # Wiki
+
 <!--برای همه لینک هات یه پارامتر title هم بزار -->
 
 <a title="کامند پرامپ ویندوز" href="#cmd">CMD</a>
