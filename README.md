@@ -35,7 +35,7 @@ Example:
 <h2>Git</h2>
 Download Command From Git
 
-Enter Next Command On CMD :
+Example:
 
 `git https://raw.githubusercontent.com/sk2011s/custom-cmd/refs/heads/main/static_commands/-cmd.py`
 <br>
