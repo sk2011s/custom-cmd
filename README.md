@@ -7,43 +7,49 @@
 open `config.json` file and set paths (Or you can make no changes)
 
 and run `python main.py` in terminall to run app
+<!--از تگ hr  برای خط استفاده کن-->
+<hr>
+# <b>Wiki</b>
+<!--برای همه لینک هات یه پارامتر title هم بزار -->
 
-# wiki
+<a title="کامند پرامپ ویندوز" href="#cmd">CMD</a>
 
-<a href="#-cmd">-cmd</a>
+<a title="برنامه گیت ویندوز" href="#git">Git</a>
 
-<a href="#-git">-git</a>
+<a title="این دستور رو بنویس" href="#makenewcommand">make new command</a>
 
-<a href="#-makenewcommand">-makenewcommand</a>
-
-<a href="#-exit">-exit</a>
+<a title="خروج" href="#exit">Exit</a>
 
 <br>
-<h2>-cmd</h2>
-run cmd code
+<h2>CMD</h2>
+Run CMD Code
 
 `cmd <cmd command>`
 
-example:
+Example:
   
 `cmd echo "Hello World"`
 <br>
-<h2>-git</h2>
-download command from github
+<h2>Git</h2>
+Download Command From Git
 
-`git <url>`
-
-example:
+Enter Next Command On CMD :
 
 `git https://raw.githubusercontent.com/sk2011s/custom-cmd/refs/heads/main/static_commands/-cmd.py`
 <br>
-<h2>-makenewcommand</h2>
+<BR>
+<h2>makenewcommand</h2>
 
 `mnc`
 <br>
-<h2>-exit</h2>
+<HR>
+<H3>Exit</H3>
+<BR>
+<!--بخخشید داداش تو هر HTML از تگ H2 میشه فقط 3 بار استفاده کرد نه 4 بار-->
 
 `exit/e`
-<br>
-<br>
-you  can use `help` to see all commands
+<HR>
+<H1>you  can use `help` to see all commands</H1>
+<!--امیدوارم از ادیت من خوشت بیاد ولی برات اوکیش کردم چون خیلی سرسری نوشتیش چون دسترسی سابمیت ندارم برات تو تلگرام میفرستم و برای اون بخش make new command یه توضیحی بده چون انگاری فقط نوشتس و معنایی برا مخاطب نداره-->
+<!--از تگ br کمتر استفاده کن تا متن دلنشین تر شه-->
+<!--از طرف دوست عزیزت isme8349 -->
