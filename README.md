@@ -37,7 +37,9 @@ Download Command From Git
 
 Example:
 
-`git https://raw.githubusercontent.com/sk2011s/custom-cmd/refs/heads/main/static_commands/-cmd.py`
+```
+git https://raw.githubusercontent.com/sk2011s/custom-cmd/refs/heads/main/static_commands/-cmd.py
+```
 <br>
 <BR>
 <h2>makenewcommand</h2>
