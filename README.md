@@ -6,7 +6,7 @@
 
 open `config.json` file and set paths (Or you can make no changes)
 
-and Extract the `.venv.rar` file and run the `run.bat` file
+Extract the `.venv.rar` file here and run the `run.bat` file
 <!--از تگ hr  برای خط استفاده کن-->
 <hr>
 
