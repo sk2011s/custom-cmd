@@ -51,6 +51,13 @@ run `mnc`
 <BR>
 <!--بخخشید داداش تو هر HTML از تگ H2 میشه فقط 3 بار استفاده کرد نه 4 بار-->
 
+<h2>cd</h2>
+Change Working Folder
+
+`cd <Folder Path>`
+
+<br>
+
 `exit/e`
 <HR>
 <H1>you  can use `help` to see all commands</H1>
