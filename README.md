@@ -7,12 +7,11 @@
 open `config.json` file and set paths (Or you can make no changes)
 
 Extract the `.venv.rar` file here and run the `run.bat` file
-<!--از تگ hr  برای خط استفاده کن-->
+
 <hr>
 
 # Wiki
 
-<!--برای همه لینک هات یه پارامتر title هم بزار -->
 
 <a title="کامند پرامپ ویندوز" href="#cmd">CMD</a>
 
@@ -49,9 +48,8 @@ git https://raw.githubusercontent.com/sk2011s/custom-cmd/refs/heads/main/static_
 run `mnc`
 <br>
 <HR>
-<H3>Exit</H3>
+
 <BR>
-<!--بخخشید داداش تو هر HTML از تگ H2 میشه فقط 3 بار استفاده کرد نه 4 بار-->
 
 <h2>CD</h2>
 Change Working Folder
@@ -59,10 +57,8 @@ Change Working Folder
 `cd <Folder Path>`
 
 <br>
+<H3>Exit</H3>
 
 `exit/e`
 <HR>
 <H1>you  can use `help` to see all commands</H1>
-<!--امیدوارم از ادیت من خوشت بیاد ولی برات اوکیش کردم چون خیلی سرسری نوشتیش چون دسترسی سابمیت ندارم برات تو تلگرام میفرستم و برای اون بخش make new command یه توضیحی بده چون انگاری فقط نوشتس و معنایی برا مخاطب نداره-->
-<!--از تگ br کمتر استفاده کن تا متن دلنشین تر شه-->
-<!--از طرف دوست عزیزت isme8349 -->
