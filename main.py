@@ -80,7 +80,7 @@ commands, help_ids = load_commands(
 # main loop
 while True:
     try:
-        user_input = input("Enter command: ")
+        user_input = input(f"{os.getcwd()}>")
         user_input = environment_var(user_input)
         parts = shlex.split(user_input)
         command_id = parts[0]
