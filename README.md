@@ -20,6 +20,8 @@ Extract the `.venv.rar` file here and run the `run.bat` file
 
 <a title="این دستور رو بنویس" href="#makenewcommand">make new command</a>
 
+<a title="تغییر فولدر" href="#cd">CD</a>
+
 <a title="خروج" href="#exit">Exit</a>
 
 <br>
@@ -51,7 +53,7 @@ run `mnc`
 <BR>
 <!--بخخشید داداش تو هر HTML از تگ H2 میشه فقط 3 بار استفاده کرد نه 4 بار-->
 
-<h2>cd</h2>
+<h2>CD</h2>
 Change Working Folder
 
 `cd <Folder Path>`
