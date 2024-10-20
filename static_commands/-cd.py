@@ -1,5 +1,5 @@
 no_args = False
-args = [dir]
+args = ["dir"]
 ids = ["cd", "chdir", "changedir"]
 arg_type = "args"
 description = "change the working directory"
