@@ -1,9 +1,0 @@
-INFO:root:Loaded hello.py
-INFO:root:Loaded -cd.py
-INFO:root:Loaded -cmd.py
-INFO:root:Loaded -exit.py
-INFO:root:Loaded -git.py
-INFO:root:Loaded -help.py
-INFO:root:Loaded -makenewcommand.py
-ERROR:root:command cls not found
-INFO:root:user used e

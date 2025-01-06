@@ -6,7 +6,7 @@
 
 open `config.json` file and set paths (Or you can make no changes)
 
-Extract the `.venv.rar` file here and run the `run.bat` file
+run the `run.bat` file
 
 <hr>
 
@@ -34,7 +34,7 @@ Example:
 `cmd echo "Hello World"`
 <br>
 <h2>Git</h2>
-Download Command From Git
+Download Command From Github
 
 Example:
 

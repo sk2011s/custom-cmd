@@ -1,8 +1,10 @@
 import os
+
 args = []
 arg_type = "args"
 no_args = True
 ids = ["help", "Help"]
+
 
 @staticmethod
 def run(commands):

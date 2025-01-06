@@ -12,12 +12,14 @@ ids = ["mnc"]
 arg_type = "args"
 description = ""
 
+
 @staticmethod
 def run():
-    
+
     def rsubmit():
-        if checkok(idse.get(), name.get(), description.get(), argse.get()) == 0: root.destroy()
-    
+        if checkok(idse.get(), name.get(), description.get(), argse.get()) == 0:
+            root.destroy()
+
     root = tk.Tk()
     root.title("mnc-gui")
     root.minsize(320, 240)
@@ -32,7 +34,7 @@ def run():
 
     idse = tk.Entry(root)
     idse.pack()
-    
+
     tk.Label(root, text="args:").pack()
     tk.Label(root, text='split args with ","', fg="gray").pack()
     argse = tk.Entry(root)
@@ -47,11 +49,12 @@ def run():
 
     root.mainloop()
 
+
 def checkok(idsc, name, desc, args):
     if check(name=name, idsc=idsc, desc=desc, args=args):
         with open(path.join(config["Commands_Folder"], name + ".py"), "w") as f:
             f.write(
-f"""^
+                f"""^
 no_args = False
 args = {args.split(",")}
 ids = {idsc.split(",")}
@@ -60,12 +63,15 @@ description = "{desc}"
 
 def run({args}):
     pass
-"""
-.replace("^\n", ""))
+""".replace(
+                    "^\n", ""
+                )
+            )
         f.close()
         return 0
 
-def check(name: str, idsc: str, desc: str, args:str):
+
+def check(name: str, idsc: str, desc: str, args: str):
     if name != "" and desc != "" and idsc != "" and args != "":
         if name.startswith("-"):
             msg.showerror("Error", "Name Can't Start With '-'")
@@ -79,7 +85,3 @@ def check(name: str, idsc: str, desc: str, args:str):
         return False
 
     return True
-
-
-if __name__ == "__main__":
-    run()

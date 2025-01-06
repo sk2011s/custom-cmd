@@ -1,8 +1,9 @@
 no_args = True
 args = []
-ids = ["exit","e"]
+ids = ["exit", "e"]
 arg_type = "args"
 description = "exit the program"
+
 
 @staticmethod
 def run():

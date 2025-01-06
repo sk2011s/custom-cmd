@@ -5,15 +5,16 @@ import json
 no_args = False
 args = ["url"]
 ids = ["git"]
-arg_type = "args"
+arg_type = "arg"
 description = "download command file from github"
 
 with open("config.json", "r") as f:
     config = json.load(f)
     f.close()
 
+
 @staticmethod
-def run(url, *args):
+def run(url):
 
     local_filename = os.path.join(config["Commands_Folder"], os.path.basename(url))
 
@@ -41,8 +42,3 @@ def run(url, *args):
         return -1
     else:
         print("file is not python file")
-        
-
-
-if __name__ == "__main__":
-    run()
