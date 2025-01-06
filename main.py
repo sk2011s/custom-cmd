@@ -7,8 +7,8 @@ import json
 import logging
 import datetime
 
-import sys
-sys.dont_write_bytecode = True
+from sys import dont_write_bytecode
+dont_write_bytecode = True
 
 os.system("cls")
 
@@ -74,7 +74,7 @@ logging.basicConfig(filename=os.path.join(config["log_folder"], f"\"{str(datetim
 
 # save loaded commands
 commands, help_ids = load_commands(
-    config["Commands_Folder"], os.getcwd() + "\\static_commands"
+    config["Commands_Folder"], os.getcwd() + "\\static"
 )
 
 # main loop

@@ -1,0 +1,10 @@
+requests==2.32.3
+sys
+logging
+shlex
+os
+json
+datetime
+inspect
+importlib
+tkinter
