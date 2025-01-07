@@ -1,6 +1,7 @@
 import importlib.util
 import os
 import logging, datetime, json
+from colorama.ansi import Fore
 
 with open("config.json", "r") as f:
     config = json.load(f)
@@ -14,7 +15,7 @@ logging.basicConfig(filename=log_filename, level=logging.DEBUG)
 def load_commands(directory, static_cmds):
     commands = {}
     help_ids = []
-    print("loading commands...")
+    print(Fore.BLUE + "loading commands..." + Fore.WHITE)
     files = os.listdir(directory)
     for i in os.listdir(static_cmds):
         files.append(i)
@@ -39,10 +40,10 @@ def load_commands(directory, static_cmds):
                     commands[cmd_id] = module
                 if "help" in module.ids or "Help" in module.ids:
                     help_ids.extend(module.ids)
-                print(f"{filename} Loaded")
+                print(Fore.GREEN + f"{filename} Loaded" + Fore.WHITE)
                 logging.info(f"Loaded {filename}")
     except Exception as e:
         logging.error(f"Error loading commands: {e}")
-        print(f"Error loading commands: {e}")
+        print(Fore.RED + f"Error loading commands: {e}" + Fore.WHITE)
         os._exit(-1)
     return commands, help_ids

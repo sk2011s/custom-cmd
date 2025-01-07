@@ -1,4 +1,5 @@
 from os import system as bat
+from colorama.ansi import Fore
 
 no_args = False
 args = ["command"]
@@ -15,4 +16,4 @@ def run(*args):
         #        print(f"Executing command: {command}")
         bat(command)
     except Exception as e:
-        print(f"Error: {e}")
+        print(Fore.RED + f"Error: {e}" + Fore.WHITE)

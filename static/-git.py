@@ -1,6 +1,7 @@
 import requests
 import os
 import json
+from colorama.ansi import Fore
 
 no_args = False
 args = ["url"]
@@ -32,13 +33,13 @@ def run(url):
                         and "arg_type =" in str(chunk)
                     ):
                         f.write(chunk)
-                        print(f"File downloaded as {local_filename}")
+                        print(Fore.GREEN + f"File downloaded as {local_filename}" + Fore.WHITE)
                     else:
-                        print("invalid file")
+                        print(Fore.YELLOW + "invalid file" + Fore.WHITE)
         return local_filename
 
     if local_filename.endswith(".py"):
         download_file(url, local_filename)
         return -1
     else:
-        print("file is not python file")
+        print(Fore.YELLOW + "file is not python file" + Fore.WHITE)
