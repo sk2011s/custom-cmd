@@ -23,14 +23,10 @@ colors = {
     "&61": Fore.LIGHTWHITE_EX,
 }
 
-
 def handle(txt: str) -> str:
-    used = False
+    used = any(i in txt for i in colors.keys())
     for i in colors.keys():
-        if i in txt:
-            used = True
         txt = txt.replace(i, colors.get(i))
     if used:
         txt += Fore.RESET
-
     return txt

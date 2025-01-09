@@ -7,5 +7,4 @@ INFO:root:Loaded -exit.py
 INFO:root:Loaded -git.py
 INFO:root:Loaded -help.py
 INFO:root:Loaded -makenewcommand.py
-INFO:root:user used cmd by args:echo [32mHello [33mWorld[39m
 INFO:root:user used e

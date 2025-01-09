@@ -1,2 +1,2 @@
-python -m pip install -r require.txt
-python main.py
+python -m pip install --no-cache-dir -r require.txt
+python -O main.py

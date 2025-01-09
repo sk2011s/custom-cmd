@@ -1,4 +1,7 @@
 from sys import dont_write_bytecode
+import os
+from colorama.ansi import Fore
+import logging
 
 dont_write_bytecode = True
 
@@ -8,12 +11,9 @@ ids = ["cd", "chdir", "changedir"]
 arg_type = "arg"
 description = "change the working directory"
 
-import os
-from colorama.ansi import Fore
-
-
 def run(dir):
     try:
         os.chdir(dir)
     except Exception as e:
-        print(Fore.RED + e + Fore.WHITE)
+        logging.error(f"Error changing directory: {e}")
+        print(Fore.RED + f"Error changing directory: {e}" + Fore.WHITE)

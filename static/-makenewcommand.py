@@ -3,6 +3,8 @@ from tkinter import messagebox as msg
 from os import path
 from json import load
 from sys import dont_write_bytecode
+import logging
+from colorama.ansi import Fore
 
 dont_write_bytecode = True
 
@@ -55,9 +57,10 @@ def run():
 
 def checkok(idsc, name, desc, args):
     if check(name=name, idsc=idsc, desc=desc, args=args):
-        with open(path.join(config["Commands_Folder"], name + ".py"), "w") as f:
-            f.write(
-                f"""^
+        try:
+            with open(path.join(config["Commands_Folder"], name + ".py"), "w") as f:
+                f.write(
+                    f"""^ 
 no_args = False
 args = {args.split(",")}
 ids = {idsc.split(",")}
@@ -67,24 +70,30 @@ description = "{desc}"
 def run({args}):
     pass
 """.replace(
-                    "^\n", ""
+                        "^\n", ""
+                    )
                 )
-            )
-        f.close()
-        return 0
+            return 0
+        except Exception as e:
+            logging.error(f"Failed to create command file: {e}")
+            msg.showerror("Error", Fore.RED + f"Failed to create command file: {e}" + Fore.WHITE)
+            return -1
 
 
 def check(name: str, idsc: str, desc: str, args: str):
     if name != "" and desc != "" and idsc != "" and args != "":
         if name.startswith("-"):
-            msg.showerror("Error", "Name Can't Start With '-'")
+            logging.error("Name Can't Start With '-'")
+            msg.showerror("Error", Fore.RED + "Name Can't Start With '-'" + Fore.WHITE)
             return False
 
         if " " in idsc or " " in args:
-            msg.showerror("Error", "Ids is Invalid")
+            logging.error("Ids is Invalid")
+            msg.showerror("Error", Fore.RED + "Ids is Invalid" + Fore.WHITE)
             return False
     else:
-        msg.showerror("Error", "Please fill in all the entries")
+        logging.error("Please fill in all the entries")
+        msg.showerror("Error", Fore.RED + "Please fill in all the entries" + Fore.WHITE)
         return False
 
     return True

@@ -31,7 +31,7 @@ git https://raw.githubusercontent.com/sk2011s/custom-cmd/refs/heads/main/static_
 ```
 
 ### makenewcommand
-Run `mnc`
+Use `mnc` command
 
 ### CD
 Change Working Folder
