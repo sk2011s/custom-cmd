@@ -2,6 +2,9 @@ import tkinter as tk
 from tkinter import messagebox as msg
 from os import path
 from json import load
+from sys import dont_write_bytecode
+
+dont_write_bytecode = True
 
 with open("config.json", "r") as f:
     config = load(f)

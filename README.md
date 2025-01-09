@@ -1,30 +1,19 @@
-<a href=https://discord.gg/3Un9ub7BET><img src="https://badgen.net/discord/members/3Un9ub7BET" alt="sk2011se dev"></a>
+<a href="https://discord.gg/3Un9ub7BET"><img src="https://badgen.net/discord/members/3Un9ub7BET" alt="sk2011se dev"></a>
 <img src="https://img.shields.io/github/stars/sk2011s/custom-cmd.svg" alt="sk2011se dev">
 <img src="https://img.shields.io/github/forks/sk2011s/custom-cmd.svg" alt="sk2011se dev">
 
-# installation:
+# Installation
 
-open `config.json` file and set paths (Or you can make no changes)
-
-run the `run.bat` file
+1. Open `config.json` file and set paths (Or you can make no changes).
+2. Run the `run.bat` file.
 
 <hr>
 
 # Wiki
 
+## Commands
 
-<a title="کامند پرامپ ویندوز" href="#cmd">CMD</a>
-
-<a title="برنامه گیت ویندوز" href="#git">Git</a>
-
-<a title="این دستور رو بنویس" href="#makenewcommand">make new command</a>
-
-<a title="تغییر فولدر" href="#cd">CD</a>
-
-<a title="خروج" href="#exit">Exit</a>
-
-<br>
-<h2>CMD</h2>
+### CMD
 Run CMD Code
 
 `cmd <cmd command>`
@@ -32,8 +21,8 @@ Run CMD Code
 Example:
   
 `cmd echo "Hello World"`
-<br>
-<h2>Git</h2>
+
+### Git
 Download Command From Github
 
 Example:
@@ -41,24 +30,45 @@ Example:
 ```
 git https://raw.githubusercontent.com/sk2011s/custom-cmd/refs/heads/main/static_commands/-cmd.py
 ```
-<br>
-<BR>
-<h2>makenewcommand</h2>
 
-run `mnc`
-<br>
-<HR>
+### makenewcommand
+Run `mnc`
 
-<BR>
-
-<h2>CD</h2>
+### CD
 Change Working Folder
 
 `cd <Folder Path>`
 
-<br>
-<H3>Exit</H3>
+### Exit
+Exit the program
 
 `exit/e`
-<HR>
-<H1>you  can use `help` to see all commands</H1>
+
+<hr>
+
+## Help
+You can use `help` to see all commands.
+
+## Typing
+
+### Color
+You can use `&` to write colored text.
+
+1. &1E: BLACK
+2. &1F: RED
+3. &20: GREEN
+4. &21: YELLOW
+5. &22: BLUE
+6. &23: MAGENTA
+7. &24: CYAN
+8. &25: WHITE
+9. &27: RESET
+10. &5A: LIGHT BLACK
+11. &5D: LIGHT YELLOW
+12. &5E: LIGHT BLUE
+13. &5F: LIGHT MAGENTA
+14. &60: LIGHT CYAN
+15. &61: LIGHT WHITE
+
+### Environment Variables
+You can use environment variables in ccmd.

@@ -1,3 +1,7 @@
+from sys import dont_write_bytecode
+
+dont_write_bytecode = True
+
 no_args = False
 args = ["dir"]
 ids = ["cd", "chdir", "changedir"]

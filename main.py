@@ -1,9 +1,10 @@
-import os
+from os import getcwd, path, system, _exit
 import shlex
 from lib.commands import load_commands
 import inspect
 from lib.variable_handler import environment_var
-import json
+from lib.color_handler import handle
+from json import load
 import logging
 from datetime import datetime
 from colorama.ansi import Fore
@@ -12,7 +13,7 @@ from sys import dont_write_bytecode
 
 dont_write_bytecode = True
 
-os.system("cls")
+system("cls")
 
 
 # run command function
@@ -69,32 +70,32 @@ def execute_command(commands, help_ids, command_id, *args):
             logging.warning(f"command {command_id} not found")
             return 0
     except Exception as e:
-        #        print(f"Error executing command '{command_id}': {e}")
         logging.error(f"Error executing command '{command_id}': {e}")
         print(Fore.RED + f"Error executing command '{command_id}': {e}" + Fore.WHITE)
-        os._exit(-1)
+        _exit(-1)
         return 0
 
 
 with open("config.json", "r") as f:
-    config = json.load(f)
+    config = load(f)
 print(Fore.GREEN + "config loaded successful" + Fore.WHITE)
 logging.info("config loaded successful")
-os.system("cls")
+system("cls")
 logging.basicConfig(
-    filename=os.path.join(config["log_folder"], f'"{str(datetime.now())}"' + ".log"),
+    filename=path.join(config["log_folder"], f'"{str(datetime.now())}"' + ".log"),
     level=logging.DEBUG,
 )
 
 # save loaded commands
-commands, help_ids = load_commands(config["Commands_Folder"], os.getcwd() + "\\static")
-os.system("cls")
+commands, help_ids = load_commands(config["Commands_Folder"], getcwd() + "\\static")
+system("cls")
 # main loop
 while True:
     try:
-        user_input = input(f"{os.getcwd()}>")
+        user_input = input(f"{getcwd()}>")
         if user_input != "":
             user_input = environment_var(user_input)
+            user_input = handle(user_input)
             parts = shlex.split(user_input)
             command_id = parts[0]
             args = parts[1:]
@@ -103,10 +104,10 @@ while True:
 
             if result == -1:
                 del result, commands, help_ids, config
-                os._exit(0)
+                _exit(0)
         else:
             pass
     except Exception as e:
         logging.error(f"Error in main loop: {e}")
         print(Fore.RED + f"Error in main loop: {e}" + Fore.WHITE)
-        os._exit(-1)
+        _exit(-1)

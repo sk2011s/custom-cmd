@@ -1,5 +1,8 @@
 from os import system as bat
 from colorama.ansi import Fore
+from sys import dont_write_bytecode
+
+dont_write_bytecode = True
 
 no_args = False
 args = ["command"]

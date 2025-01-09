@@ -2,6 +2,9 @@ import requests
 import os
 import json
 from colorama.ansi import Fore
+from sys import dont_write_bytecode
+
+dont_write_bytecode = True
 
 no_args = False
 args = ["url"]
@@ -33,7 +36,11 @@ def run(url):
                         and "arg_type =" in str(chunk)
                     ):
                         f.write(chunk)
-                        print(Fore.GREEN + f"File downloaded as {local_filename}" + Fore.WHITE)
+                        print(
+                            Fore.GREEN
+                            + f"File downloaded as {local_filename}"
+                            + Fore.WHITE
+                        )
                     else:
                         print(Fore.YELLOW + "invalid file" + Fore.WHITE)
         return local_filename

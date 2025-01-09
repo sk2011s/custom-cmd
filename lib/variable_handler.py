@@ -1,6 +1,9 @@
-import os
+from os import environ
+from sys import dont_write_bytecode
 
-vars = os.environ
+dont_write_bytecode = True
+
+vars = environ
 out = []
 env_var = []
 for var, val in vars.items():
