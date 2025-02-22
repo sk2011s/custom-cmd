@@ -77,6 +77,7 @@ except Exception as e:
 
 system("cls")
 logging.basicConfig(
+    format='%(asctime)s - %(levelname)s - %(message)s',
     filename=path.join(config["log_folder"], f'"{str(datetime.now())}"' + ".log"),
     level=logging.DEBUG,
 )

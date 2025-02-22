@@ -5,6 +5,11 @@ from colorama.ansi import Fore
 
 dont_write_bytecode = True
 
+logging.basicConfig(
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    level=logging.DEBUG
+)
+
 args = []
 arg_type = "args"
 no_args = True

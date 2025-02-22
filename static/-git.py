@@ -7,6 +7,11 @@ import logging
 
 dont_write_bytecode = True
 
+logging.basicConfig(
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    level=logging.DEBUG
+)
+
 no_args = False
 args = ["url"]
 ids = ["git"]

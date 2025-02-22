@@ -3,6 +3,11 @@ from colorama.ansi import Fore
 from sys import dont_write_bytecode
 import logging
 
+logging.basicConfig(
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    level=logging.DEBUG
+)
+
 dont_write_bytecode = True
 
 no_args = False
